@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="input_numero"> <br>
+    <button onclick="numeroSete()">
+        Viva o 7!
+    </button>
+    <div id="div_numero"></div>
+
+</html>
+<script>
+    function numeroSete() {
+        var numeroMax = Number(input_numero.value);
+        var numero = 0;
+        div_numero.innerHTML = ``;
+
+        while (numero <= numeroMax) {
+
+
+            if (numero >= 0 && numero <= 200) {
+                div_numero.innerHTML += `${numero} <br>`;
+                numero += 7;
+            }
+        }
+    }
+</script>

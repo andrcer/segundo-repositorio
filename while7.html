@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input_numeroMaximo"> <br>
+    <button onclick="verMultiplosdeCinco()">
+        Adoro multiplos de 5
+    </button>
+    <div id="div_multiplos"></div>
+</body>
+</html>
+<script>
+    function verMultiplosdeCinco(){
+    var numeroMaximo = Number (input_numeroMaximo.value);
+    var numero = 0;
+    div_multiplos.innerHTML= ``;
+
+    while (numero <=numeroMaximo) {
+        div_multiplos.innerHTML += `${numero} <br>`;
+        numero += 5;
+    }
+
+
+    }
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Meio de transporte <br>
+    <input id="input_transporte"> <br>
+    Distância até a faculdade <br>
+    <input id="input_km"> <br>
+    <button onclick="calcularCansaco()">
+        Calcular cansaço
+    </button>
+</body>
+</html>
+<script>
+    function calcularCansaco(){
+        var transporte = input_transporte.value;
+        var km = Number (input_km.value)
+        
+        if (km <= 10 && transporte=='carro' || transporte== 'metro' || transporte== 'onibus') {
+            alert('Tá tranks')
+        }
+        else if (km > 10 && transporte== 'carro' ) {
+            alert('É ... um pouco cansado ...')
+        }
+        else if (transporte== 'metro'|| transporte=='onibus') {
+            alert('Bem cansado')
+        }
+        else if (transporte== 'bicicleta') {
+            alert('Vishh...Só o pó!')
+        }
+
+    }
+
+</script>
+    

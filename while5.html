@@ -1,0 +1,42 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="contagemNumero()">
+        Números Cabalísticos
+    </button>
+    <div id="div_numero"></div>
+</body>
+</html>
+<script>
+    function contagemNumero(){
+        var contagem = 0;
+        div_numero.innerHTML = ``
+        while (contagem<= 30) {
+            
+            if (contagem !=3 && contagem != 4 && contagem != 7 && contagem != 10 && contagem != 12) {
+            div_numero.innerHTML+= `: ${contagem} <br>`
+            contagem+=1;
+            
+        }
+
+        }
+        
+    }
+
+           // if (contagem ==3 || contagem == 4 || contagem == 7 || contagem == 10 || contagem == 12) {
+            
+            
+       // }
+        //else{
+        //    div_numero.innerHTML+= `: ${contagem} <br>`
+       // }
+        //contagem+=1;
+
+        
+
+</script>

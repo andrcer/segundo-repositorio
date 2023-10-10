@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Quantas frases quer mostar:
+    <input id="input_qtdFrases">
+    <button onclick="qtdFrases()">
+        Cumprimentar
+    </button>
+</body>
+</html>
+<script>
+    function qtdFrases(){
+        var qtdFrases= Number (input_qtdFrases.value);
+
+        var repeticao=1;
+        while(repeticao<=qtdFrases){
+            alert("Bom dia!!!");
+            repeticao+=1;
+        }
+    }
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img_largura" src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoD6Pfu91j79I0lSgd5-0p57w2L0ka-ZHzg&usqp=CAU"
+    style="width: 100px;"/><br>
+    
+    <button onclick="auLargura()">
+        Aumentar largura
+    </button><br>
+    <button onclick="diLargura()">
+        Diminuir largura
+    </button><br>
+</body>
+</html>
+<script>
+    var valorAtual= 100;
+     function auLargura(){
+        valorAtual = valorAtual + 10;
+        img_largura.style.width = valorAtual + "px";
+     }
+     function diLargura(){
+        valorAtual = valorAtual - 10;
+        img_largura.style.width = valorAtual + "px";
+     }
+</script>

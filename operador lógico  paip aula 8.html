@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual fruta? <br>
+    <input id="input_fruta"><br>
+
+    <button onclick="uvaAbacaxi()">
+        Vai comer? 
+    </button>
+    <div id="div_fruta">
+
+    </div>
+</body>
+</html>
+<script>
+    function uvaAbacaxi(){
+        var fruta= input_fruta.value;
+
+        if (fruta == "uva" || fruta == "abacaxi") {
+            div_fruta.innerHTML = `Sim, ela vai comer a ${fruta}`
+        }
+        else{
+            div_fruta.innerHTML = `A fruta ${fruta} ela não come`
+        }
+
+    }
+
+</script>

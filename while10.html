@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Valor crescnete numérico: <br>
+    <input id="input_incio"><br>
+    <input id="input_fim"><br>
+    <button onclick="verPares()">
+        S2 pares
+    </button>
+    <div id="div_pares"></div>
+</body>
+</html>
+<script>
+    function verPares(){
+        var inicioIntervalo = Number (input_inicio.value);
+        var fimIntervalo = Number (input_fim.value);
+        var numero = inicioIntervalo;
+        div_pares.innerHTML= ``;
+
+        while (numero <= fimIntervalo){
+            if (numero %2 == 0 ){
+                div_pares.innerHTML += `${numero} <br>`;
+            }
+            numero += 1;
+        }
+    }
+
+</script>
+
+<!-- Crie um programa o qual: 
+
+a) Solicite um intervalo crescente de valores numéricos  
+
+b) Ao clicar num botão "S2 Pares"... 
+
+c) Exiba, debaixo do botão, todos os números pares contidos no intervalo. -->

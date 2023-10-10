@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome da empresa <br>
+    <input id="input_empresa"> <br>
+    Valor da bolsa <br>
+    <input id="input_bolsa"> <br>
+    Valor do VR <br>
+    <input id="input_vr"> <br>
+    Tempo de deslocamento até a SPTECH <br>
+    <input id="input_deslocamento"> <br>
+
+    <button onclick="resultadoFinal()">
+        É preferida?
+    </button>
+    <div id="div_resultado">
+    </div>
+</body>
+</html>
+<script>
+    function resultadoFinal(){
+        var empresa = input_empresa.value;
+        var bolsa = Number (input_bolsa.value);
+        var vr = Number (input_vr.value);
+        var deslocamento = Number (input_deslocamento.value)
+
+        if (bolsa >= 1800 || vr>= 20 || deslocamento <= 30 ) {
+            div_resultado.innerHTML = `A empresa ${empresa} é uma de suas preferências`
+            
+        }
+        else{
+            div_resultado.innerHTML = `A empresa ${empresa} está fora da sua lista`
+        }
+        
+
+
+    }
+</script>

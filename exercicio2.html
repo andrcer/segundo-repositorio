@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Banco XPTO</b>
+    <b>Insira seu nome</b>
+    <input type="text" id="input_nome"><br>;
+   <b>Insira seu Saldo</b>
+    <input type="text" id="input_saldo"><br>;
+    <b>Valor a tirar da conta</b>
+    <input type="text" id="input_valorDebito"><br>;
+    <Button type="Button" onclick="falarComUsuario()">
+        Calcule o novo saldo
+    </Button>
+</body>
+</html>
+<script>
+    function falarComUsuario(){
+        var nome = input_nome.value;
+        var saldo = Number  (input_saldo.value);
+        var valorDebitado = Number (input_valorDebito.value);
+        var saldoTotal = saldo - valorDebitado
+    
+        if (saldoTotal< 0){
+            alert (' o saldo atual da conta corrente é ${saldoTotal}')
+
+        }
+        else {alert ('o saldo atual da conta corrente é ${saldoTotal}')
+        }
+    }
+</script>

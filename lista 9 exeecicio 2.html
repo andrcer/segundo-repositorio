@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual seu salário? <br>
+    <input id="input_salario"><br>
+    <button onclick="granaAtual()">
+        Confirmar salário
+    </button>
+    <button onclick="granaCem()">
+        Pagar conta de 100 
+    </button>
+    <button onclick="granaQuinhentos()">
+        Pagar conta de 500
+    </button>
+    <button onclick="granaLoteria()">
+        Ganhar 2.000 na lorteria
+    </button>
+
+    <div id="div_salario">
+    </div>
+
+</body>
+</html>
+<script>
+    var salario = 0
+
+
+
+    function granaAtual(){
+
+        salario = Number (input_salario.value)
+        
+        div_salario.innerHTML= `Grana atual: ${salario}`;
+
+    }
+    function granaCem(){
+        salario -=100
+        div_salario.innerHTML= `Grana atual: ${salario}`;
+       
+    }
+    function granaQuinhentos(){
+        salario -=500
+        div_salario.innerHTML= `Grana atual: ${salario}`;
+    }
+    function granaLoteria() {
+        salario += 2000
+        div_salario.innerHTML= `Grana atual: ${salario}`;
+    }
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de cansaço SPTECH</title>
+    
+</head>
+<body>
+    Meio de transporte <br>
+    <input id="input_transporte">
+    <button onclick="calcularCansaco()">
+        Calcular cansaço
+    </button>
+</body>
+</html>
+<script>
+    function calcularCansaco(){
+        var transporte = input_transporte.value;
+
+        if (transporte =='carro' || transporte =='bicicleta') {
+            alert(`Tá de boa !`)
+        }
+
+        if(transporte =='onibus'|| transporte =='lotação'){
+            alert('Vish...Vive cansado!')
+        }
+
+        else if(transporte = 'metrô'){
+            alert('Um pouco cansado')
+        }
+        
+
+    }
+
+
+</script>

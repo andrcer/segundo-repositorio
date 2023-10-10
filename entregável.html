@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span style="color: blue;" id="span_pato">
+Total guardado no cofrinho: R$0 <br>
+Depósitos efetuados: 0 <br>
+Retiradas efetuadas: 0 <br>
+    </span>
+
+    
+    <button onclick="depositoCin()">
+        Depositar 0,50
+    </button>
+    <button onclick="depositoDois()">
+        Depositar 2,00
+    </button>
+    <button onclick="retirarCin()">
+        Retirar 0,50
+    </button>
+    <button onclick="retirarValor()">
+        Retirar
+    </button>
+    <input id="input_retirar">
+</body>
+</html>
+<script>
+    var deposito = 0
+    var retirar = 0
+    var saldo = 0
+
+    function depositoCin(){
+
+        deposito +=1
+        saldo += 0.50
+        span_pato.innerHTML =
+ `
+ Total guardado no cofrinho: ${saldo} <br>
+Depósitos efetuados: ${deposito} <br>
+Retiradas efetuadas: ${retirar} <br>
+`
+        
+    }
+    
+    function depositoDois(){
+
+        deposito += 1
+        saldo += 2.00
+        span_pato.innerHTML =
+
+    `
+Total guardado no cofrinho: ${saldo} <br>
+Depósitos efetuados: ${deposito} <br>
+Retiradas efetuadas: ${retirar} <br>
+    
+    `
+    }
+
+    function retirarCin(){
+
+
+
+        retirar += 1
+        saldo -= 0.50
+        span_pato.innerHTML =
+        `
+Total guardado no cofrinho: ${saldo} <br>
+Depósitos efetuados: ${deposito} <br>
+Retiradas efetuadas: ${retirar} <br>
+        
+        `
+    }
+
+    function retirarValor(){
+
+        var retirarV = Number (input_retirar.value) 
+        saldo -= retirarV
+        retirar += 1
+        span_pato.innerHTML =
+        `
+Total guardado no cofrinho: ${saldo} <br>
+Depósitos efetuados: ${deposito} <br>
+Retiradas efetuadas: ${retirar} <br>
+        
+        `
+    }
+
+    
+
+    
+    
+
+
+</script>

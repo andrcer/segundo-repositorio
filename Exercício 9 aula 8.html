@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira a marca da TV <br>
+    <input id="input_tv"> <br>
+    Insira o preço <br>
+    <input id="input_preco"> <br>
+
+    <button onclick="resultadoFinal()">
+        Analisar compra
+    </button>
+    <div id="div_compra"></div>
+</body>
+</html>
+<script>
+    function resultadoFinal(){
+        var tv = input_tv.value;
+        var preco = input_preco.value;
+
+        if (preco <800 || preco >2000 && tv== 'Samsung' || tv== 'LG' ) {  
+            div_compra.innerHTML = `TV fora da faixa de preço`
+        }
+        else if(preco >=800 || preco <=2000 && tv =='Samsung' || tv== 'LG'){
+            div_compra.innerHTML = `Essa TV pode entrar na sua lista`
+        }
+        else if (preco >=800 || preco <=2000 && tv == 'Mondial' || tv == 'Britania') {
+            div_compra.innerHTML = `Na faixa de preço, porém marca não confiável`
+        }
+        else if (preco < 800 && tv== 'Samsung' || tv== 'LG' ){
+            div_compra.innerHTML = `Preço baixo demais!`
+        }
+        else if (preco > 2000 && tv== 'Samsung' || tv== 'LG' ){
+            div_compra.innerHTML = `TV cara demais, infelizmente!`
+        }
+        else if (preco >=800 || preco <=2000 && tv == 'Mondial' || tv == 'Britania') {
+            div_compra.innerHTML = `Na faixa de preço, porém marca não confiável`
+        }
+
+
+
+
+    }
+
+
+</script>

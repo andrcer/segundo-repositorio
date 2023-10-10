@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira a nota do ENEM <br>
+    <input id="input_nota"> <br>
+    Insira a nota do vestibular interno <br>
+    <input id="input_interno"> <br>
+
+    <button onclick="notaFinal()">
+        Avaliação
+    </button>
+    
+</body>
+</html>
+<script>
+    function notaFinal(){
+        var nota = (input_nota.value)
+        var interno = (input_interno.value)
+
+        if (nota >= 800 || interno >= 700) {
+            alert(`Parabéns, aprovado!`)
+        }
+        else{
+            alert(`Tente semestre que vem`)
+        }
+
+    }
+
+
+</script>
